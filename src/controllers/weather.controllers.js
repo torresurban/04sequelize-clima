@@ -9,7 +9,7 @@ const { buscarClima, buscarCiudadPorId } = require('../services/clima.services')
  * @param {express.Request} req 
  * @param {express.Response} res 
  */
-const climasCoordenadas = async (req, res, next) => {
+const climasCoordenadas = async (req, res) => {
     try {
     
     const { lon, lat } = req.query;
@@ -27,7 +27,7 @@ const climasCoordenadas = async (req, res, next) => {
  * @param {express.Response} res 
  */
 
-const climaPorCiudadId = async (req, res, next) => {
+const climaPorCiudadId = async (req, res) => {
     try {
 
         //logger.info(JSON.stringify(req.params));

@@ -15,6 +15,8 @@ class CiudadRepositorio {
         try {
             // const url = `${this.pathBase}${ciudad}.json?limit=${this.limit}&proximity=${this.proximity}&language=${this.languaje}&access_token=${this.apikey}`
 
+            //throw new Error('Error de pruebas');
+
         const instance = axios.create({
             baseURL: `${this.pathBase}${ciudad}.json`,
             params:{

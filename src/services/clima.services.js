@@ -21,7 +21,7 @@ const buscarCiudadPorId = async (ciudad, id) => {
         const ciudades = await ciudadRepositorio.findCities(ciudad);
     
         const ciudad2 = ciudades.features.find(e => e.id === id)
-        logger.info(JSON.stringify(ciudad2));
+        //logger.info(JSON.stringify(ciudad2));
         const lon = ciudad2.geometry.coordinates[0];
         const lat = ciudad2.geometry.coordinates[1];
     
